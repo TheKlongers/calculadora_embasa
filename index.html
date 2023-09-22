@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Conta de Energia</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Conta de Agua</h1>
+        <form id="calc-form">
+            <label for="valor-anterior">Valor Anterior:</label>
+            <input type="number" id="valor-anterior" required>
+            
+            <label for="valor-atual">Valor Atual:</label>
+            <input type="number" id="valor-atual" required>
+            
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
