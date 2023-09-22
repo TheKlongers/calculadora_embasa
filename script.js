@@ -19,18 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const x = consumo - 6;
         const y = consumo - 10;
         const z = consumo - 15;
+        const w = consumo - 20;
 
-        const ate6 = 13.40 + 13.40 * 0.80;
-        const restodeacimade6 = 13.40 + x * 0.83;
+        const ate6 = 36.47 + 36.47 * 0.80;
+        const restodeacimade6 = 37.47 + x * 1.44;
         const acimade6 = restodeacimade6 * 0.80 + restodeacimade6;
-
-        const restodeacimade10 = 16.72 + y * 5.91;
+        const restodeacimade10 = 42.23 + y * 10.21;
         const acimade10 = restodeacimade10 * 0.80 + restodeacimade10;
-
-        const restodeacimade15 = (46.27 + (z*6.43))
-		const acimade15 = (restodeacimade15 *80/100) + restodeacimade15;
-
-        const acimade20 = ("Falar com Klinger");
+        const restodeacimade15 = 93.28 + z * 10.93;
+        const acimade15 = restodeacimade15 * 0.80 + restodeacimade15;
+        const restodeacimade20 = 147.93 + w * 12.28;
+        const acimade20 = restodeacimade20 * 0.80 + restodeacimade20;
 
         if (consumo <= 6) {
             return ate6;
@@ -40,8 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
             return acimade10;
         } else if (consumo <= 20) {
             return acimade15;
-        } else if (consumo > 20 ) {
+        } else if (consumo <= 25) {
             return acimade20;
+        } else {
+            return "Falar com Klinger";
         }
     }
 });
